@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts",
+    "dev": "nodemon src/index.ts",
     "lint": "ts-standard",
     "tsc": "tsc",
     "start": "node build/index.js",
@@ -15,21 +15,25 @@
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "4.3.5",
+    "@types/express": "4.17.21",
     "@types/mocha": "10.0.1",
-    "@types/express": "^4.17.13",
     "chai": "4.3.7",
     "mocha": "10.2.0",
+    "nodemon": "^3.1.9",
     "ts-node-dev": "^1.1.8",
     "ts-standard": "^11.0.0",
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "express": "4.17.3"
+    "express": "4.21.2",
+    "mongoose": "^8.9.2"
   },
   "eslintConfig": {
     "parserOptions": {
       "project": "./tsconfig.json"
     },
-    "extends": ["./node_modules/ts-standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
   }
 }

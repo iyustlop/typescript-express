@@ -1,5 +1,19 @@
 import { Weather, Visibility } from './enums'
 
+export interface WorkerEntry {
+  omegaId: string,
+  deltaMail: string,
+  name: string,
+  startDate: string,
+  languages: { 
+    language: String, 
+    exam: String },
+  location: {
+    projectType: String,
+    room: String
+  }
+}
+
 export interface DiaryEntry {
   id: number
   date: string
